@@ -171,8 +171,8 @@ namespace Section1
         private static void AddMovie()
         {
             name = ReadString("Enter a name: ", true);
-            description = ReadString("Enter a description:");
-            runLength = ReadInt32("Enter run length ( in minutes): ", 0);
+            description = ReadString("Enter a description: ");
+            runLength = ReadInt32("Enter run length (in minutes): ", 0);
         }
 
         private static int ReadInt32( string message, int minValue )
@@ -196,20 +196,25 @@ namespace Section1
         {
             return ReadString(message, false);
         }
+
         private static string ReadString( string message, bool required )
         {
             while (true)
-            Console.WriteLine(message);
-            string input = Console.ReadLine();
-            return input;
+            {
+                Console.WriteLine(message);
+                string input = Console.ReadLine();
 
-            if (!String.IsNullOrEmpty(input) || !required)
-                return input;
+                if (!String.IsNullOrEmpty(input) || !required)
+                    return input;
+
+                Console.WriteLine("You must enter a value");
+            };
         }
 
-        // A movie
+        //A movie
         static string name;
         static string description;
         static int runLength;
-
+        //static DateTime releaseDate;
     }
+}
