@@ -1,4 +1,4 @@
-﻿namespace Itse1430.MovieLbi.Ui
+﻿namespace Itse1430.MovieLib.UI
 {
     partial class MainForm
     {
