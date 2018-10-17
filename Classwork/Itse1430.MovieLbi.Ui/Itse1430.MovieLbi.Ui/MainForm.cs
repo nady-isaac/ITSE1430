@@ -31,5 +31,10 @@ namespace Itse1430.MovieLib.UI
             //aboutToolStripMenuItem.
             MessageBox.Show(this, "Sorry", "Help", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
+
+        private void MainForm_Load( object sender, EventArgs e )
+        {
+
+        }
     }
 }
