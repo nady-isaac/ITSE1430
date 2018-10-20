@@ -24,15 +24,7 @@ namespace CharacterCreator.WinForms
 
         private void button1_Click( object sender, EventArgs e )
         {
-            // casting the arguments
-            MouseEventArgs eventargs = e as MouseEventArgs;
-            Button button1 = sender as Button;
-            // displays which mouse button I used
-            MessageBox.Show(eventargs.Button.ToString());
-            // displays the name of the button I clicked
-            MessageBox.Show(button1.Name.ToString());
-            // changes the text of the button
-            button1.Text = "Ive changed";
+
         }
 
         private void comboBox1_SelectedIndexChanged( object sender, EventArgs e )
