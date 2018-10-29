@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace CharacterCreator.WinForms.Properties
+namespace CharacterCreator.Properties
 {
 
 
