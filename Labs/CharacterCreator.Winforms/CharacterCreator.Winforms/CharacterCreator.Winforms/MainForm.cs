@@ -113,5 +113,9 @@ namespace CharacterCreator.Winforms
             }
         }
 
+        private void MainForm_Load( object sender, EventArgs e )
+        {
+
+        }
     }
 }
